@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에스티로더</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- 헤더-------------- -->
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">스킨케어</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">리-뉴트리브</a></li>
+                    <li><a href="#">향수</a></li>
+                    <li><a href="#">에어린</a></li>
+                    <li><a href="#">브랜드 스토리</a></li>
+                </ul>
+            </div>
+            <div class="mini">
+                <div class="login"><a href="#"><img src="images/login.png" alt="search"></a></div>
+                <div class="search"><a href="#"><img src="images/search.png" alt="search"></a></div>
+                <div class="jang"><a href="#"><img src="images/jang.png" alt="jang"></a></div>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="submenu">
+                    <li><a href="#"><strong>카테고리별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">클렌저/토너</a></li>
+                            <li><a href="#">세럼/에센스</a></li>
+                            <li><a href="#">로션/크림</a></li>
+                            <li><a href="#">아이케어</a></li>
+                            <li><a href="#">스페셜 케어/마스크</a></li>
+                            <li><a href="#">선 케어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>피부고민별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">리페어</a></li>
+                            <li><a href="#">브라이트닝</a></li>
+                            <li><a href="#">주름완화</a></li>
+                            <li><a href="#">탄력/리프팅</a></li>
+                            <li><a href="#">피부결/모공</a></li>
+                            <li><a href="#">다크서클</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>제품라인별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">갈색병 리페어</a></li>
+                            <li><a href="#">마이크로 에센스</a></li>
+                            <li><a href="#">수프림</a></li>
+                            <li><a href="#">퍼펙셔니스트</a></li>
+                            <li><a href="#">뉴트리셔스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/skin.png" alt="sk"></a></li>
+                </ul>
+            </div>
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="submenu make">
+                    <li><a href="#"><strong>립</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">립스틱</a></li>
+                            <li><a href="#">리퀴드 립</a></li>
+                            <li><a href="#">립 글로스</a></li>
+                            <li><a href="#">립 케어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>페이스</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">파운데이션</a></li>
+                            <li><a href="#">컨실러</a></li>
+                            <li><a href="#">파우더</a></li>
+                            <li><a href="#">프라이머</a></li>
+                            <li><a href="#">블러셔</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>아이</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">아이섀도우</a></li>
+                            <li><a href="#">아이브로우</a></li>
+                            <li><a href="#">아이라이너</a></li>
+                            <li><a href="#">마스카라</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>제품라인별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">퓨어컬러</a></li>
+                            <li><a href="#">더블웨어</a></li>
+                            <li><a href="#">퓨처리스트</a></li>
+                            <li><a href="#">퓨어 컬러 앤비</a></li>
+                            <li><a href="#">앤비 립 케어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/make.png" alt="sk"></a></li>
+                </ul>
+            </div>
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="submenu">
+                    <li><a href="#"><strong>제품라인별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">리-크리에이션</a></li>
+                            <li><a href="#">다이아몬드</a></li>
+                            <li><a href="#">얼티미트 리프트 에이지 코렉팅</a></li>
+                            <li><a href="#">얼티미트 리프트 리제너레이팅 유쓰</a></li>
+                            <li><a href="#">클래식 리-뉴트리브</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>스킨케어</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">클렌저/토너</a></li>
+                            <li><a href="#">에센스/세럼</a></li>
+                            <li><a href="#">에멀전/로션</a></li>
+                            <li><a href="#">크림</a></li>
+                            <li><a href="#">아이 케어</a></li>
+                            <li><a href="#">스페셜 케어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>메이크업</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">파운데이션</a></li>
+                            <li><a href="#">파우더</a></li>
+                            <li><a href="#">쿠션</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/re.png" alt="sk"></a></li>
+                </ul>
+            </div>
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="submenu">
+                    <li><a href="#"><strong>제품라인별</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">럭셔리 프래그런스</a></li>
+                            <li><a href="#">뷰티풀 매그놀리아</a></li>
+                            <li><a href="#">모던 뮤즈</a></li>
+                            <li><a href="#">플레저</a></li>
+                            <li><a href="#">뷰티풀</a></li>
+                        </ul>
+                    </li>
+                    <li class="h-left"><a href="#"><img src="images/pur.png" alt="sk"></a></li>
+                    <li><a href="#"><img src="images/aerin.png" alt="sk"></a></li>
+                </ul>
+            </div>
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="submenu">
+                    <li><a href="#"><strong>에어린뷰티</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">향수 컬렉션</a></li>
+                            <li><a href="#">AERIN BEAUTY</a></li>
+                            <li><a href="#">ABOUT AERIN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>프래그런스 컬렉션</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">엠버 머스크</a></li>
+                            <li><a href="#">라일락 패스</a></li>
+                            <li><a href="#">이캇 자스민</a></li>
+                            <li><a href="#">매디터래니언 허니써클</a></li>
+                            <li><a href="#">와일드 제라늄</a></li>
+                            <li><a href="#">시더 바이올렛</a></li>
+                            <li><a href="#">에어린 GIFTS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><strong>프리미엄 컬렉션</strong></a>
+                        <span></span>
+                        <ul class="s-submenu">
+                            <li><a href="#">로즈 드 그라스</a></li>
+                            <li><a href="#">로드 드 그라스 뿌르 퓌</a></li>
+                            <li><a href="#">암브레트 드 누와르</a></li>
+                            <li><a href="#">리모네 디 시칠리아</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/aerin.png" alt="sk"></a></li>
+                </ul>
+            </div>
+            <div class="sub-inner">
+                <ul class="topleft">
+                    <li><a href="#"><strong>베스트셀러</strong></a></li>
+                    <li><a href="#"><strong>신제품</strong></a></li>
+                    <li><a href="#"><strong>이달의 스페셜혜택</strong></a></li>
+                    <li><a href="#"><strong>공식몰 서비스</strong></a></li>
+                    <li><a href="#"><strong>미니사이즈</strong></a></li>
+                </ul>
+                <ul class="topright">
+                    <li><a href="#"><strong>브랜드 스토리</strong><img src="images/brand5.png" alt=""></a></li>
+                    <li><a href="#"><strong>트렌드 리포트</strong><img src="images/brand1.png" alt=""></a></li>
+                    <li><a href="#"><strong>목표 & 가치</strong><img src="images/brand3.png" alt=""></a></li>
+                    <li><a href="#"><strong>Emerging Leaders Fund</strong><img src="images/brand4.png" alt=""></a></li>
+                    <li><a href="#"><strong>원료도감</strong><img src="images/brand2.png" alt=""></a></li>
+                    <li><a href="#"><strong></strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 비주얼------------ -->
+    <div class="banner">
+        <div class="swiper mySwiper swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-text" data-aos="fade-up" data-aos-duration="1500">
+                        <h2>더블 웨어의 차원이 다른 자신감, <br>하루종일 자신있는 무결점 피부</h2>
+                        <p>10년간 아시아 No.1 파운데이션 <br> 디럭스 3종 증정</p>
+                        <div class="btn"><a href="#">구매하기</a></div>
+                    </div>
+                    <img src="images/swiper1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-text3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000">
+                        <h2>8시간 푹 잔 듯, <br>밤사이 더욱 아름다워지는 피부</h2>
+                        <p>에스티 로더의 #꿀잠피부듀오 <br>공식몰 특별 세트로 만나보세요!</p>
+                        <div class="btn"><a href="#">구매하기</a></div>
+                    </div>
+                    <img src="images/swiper3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-text2">
+                        <h2>갈색병 10월 공식몰 단독 세트</h2>
+                        <p>50ml 구매 시, 갈색병 30ml & 단단크림 추가 증정 <br>75ml 구매 시, 6종 디럭스 추가 증정</p>
+                        <div class="btn"><a href="#">구매하기</a></div>
+                    </div>
+                    <img src="images/swiper4.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 메인-------------- -->
+    <main>
+        <div class="best">
+            <div class="be-inner">
+                <em class="title">Best Seller</em>
+                <ul class="tab-nav">
+                    <li><a href="#work01">메이크업</a></li>
+                    <li><a href="#work02">스킨케어</a></li>
+                    <li class="per"><a href="#work03">향수</a></li>
+                </ul>
+                <div class="tabmenu" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="tabitem make" id="work01" >
+                        <div class="item">
+                            <img src="images/make1.png" alt="make1">
+                            <div class="ma-taxt">
+                                <em>Double Wear</em>
+                                <p>더블웨어 파운데이션</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/make2.png" alt="make2">
+                            <div class="ma-taxt">
+                                <em>Double Wear</em>
+                                <p>더블웨어 플로리스 하이드레이팅 <br>프라이머 SPF45/PA++</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/make3.png" alt="make3">
+                            <div class="ma-taxt">
+                                <em>Pure Color</em>
+                                <p>퓨어 컬러 립스틱</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/make4.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>Futurist Aqua Brilliance</em>
+                                <p>퓨처리스트 파운데이션</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/make5.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>RE-NUTRIV</em>
+                                <p>리-뉴트리브 <br>울트라 래디언스 세럼 쿠션</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabitem skin" id="work02">
+                        <div class="item">
+                            <img src="images/skin1.png" alt="make1">
+                            <div class="ma-taxt">
+                                <em>Micro Essence</em>
+                                <p>마이크로 에센스 <br>트리트먼트 로션 200ml 세트</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/skin2.png" alt="make2">
+                            <div class="ma-taxt">
+                                <em>Revitalizing Supreme+</em>
+                                <p>수프림 단단 파워 크림<br> 75ml 세트</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/skin3.png" alt="make3">
+                            <div class="ma-taxt">
+                                <em>Advanced Night Repair</em>
+                                <p>핑크리본 갈색병 세럼 <br>스페셜 에디션 50ml</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/skin4.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>Advanced Night Repair</em>
+                                <p>갈색병 세럼 50ml 세트</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/skin5.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>Advanced Night Repair</em>
+                                <p>퓨처리스트 파운데이션</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabitem fume" id="work03">
+                        <div class="item">
+                            <img src="images/pum1.png" alt="make1">
+                            <div class="ma-taxt">
+                                <em>AERIN Lilac Path</em>
+                                <p>라일락 패스 EDP</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/pum2.png" alt="make2">
+                            <div class="ma-taxt">
+                                <em>Modern Muse</em>
+                                <p>모던 뮤즈 EDP</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/pum3.png" alt="make3">
+                            <div class="ma-taxt">
+                                <em>Luxury Fragrance Collection</em>
+                                <p>드림 더스크</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/pum4.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>Beautiful Magnolia</em>
+                                <p>뷰티풀 매그놀리아</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/pum5.png" alt="make4">
+                            <div class="ma-taxt">
+                                <em>AERIN Amber Musk</em>
+                                <p>앰버 머스크 트래블 스프레이</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="re-inner">
+                <div class="title">
+                    <em>Recommend</em>
+                    <p>에스티로더의 추천상품</p>
+                </div>
+                <div class="swiper mySwiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco1.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>Double Wear</em>
+                                    <p>더블웨어 파운데이션</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco2.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>Advanced Night Repair</em>
+                                    <p>어드밴스드 나이트 리페어</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco3.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>Revitalizing Supreme+</em>
+                                    <p>리바이탈라이징 수프림 플러스 <br> 유스 파워 소프트 크림</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco5.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>Beautiful Magnolia</em>
+                                    <p>뷰티풀 매그놀리아</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco7.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>RE-NUTRIV</em>
+                                    <p>리-뉴트리브 쿠션</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">     
+                                <img src="images/reco8.png" alt="re">
+                                <div class="re-slide-text">
+                                    <em>Double Wear</em>
+                                    <p>더블웨어 플로리스 하이드레이팅 <br> 프라이머 SPF45/PA++</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 선물세트------------- -->
+        <div class="gift">
+            <div class="gi-inner">
+                <div class="title">
+                    <em>Sets & Gift</em>
+                    <p>공식몰 단독 금액별 선물세트</p>
+                </div>
+                <div class="giftbox" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="left box">
+                        <div class="gi-text">
+                            <p>5만원 이하 <br>선물세트</p>
+                            <a href="#">자세히보기 > </a>
+                        </div>
+                        <img src="images/gift1.png" alt="gi">
+                    </div>
+                    <div class="center box">
+                        <div class="gi-text">
+                            <p>10만원 이하 <br>선물세트</p>
+                            <a href="#">자세히보기 ></a>
+                        </div>
+                        <img src="images/gift2.png" alt="gi">
+                    </div>
+                    <div class="right box">
+                        <div class="gi-text">
+                            <p>10만원 이상 <br>선물세트</p>
+                            <a href="#">자세히보기 ></a>
+                        </div>
+                        <img src="images/gift3.png" alt="gi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 공식몰 서비스--------------- -->
+        <div class="service">
+            <div class="se-inner">
+                <div class="swiper mySwiper swiper3">
+                    <div class="title">
+                        <em>Estee Lauder <br> Service</em>
+                        <p>공식몰 단독 서비스</p>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/service1.png" alt="se">
+                            <div class="content">
+                                <h4>버츄얼 상담 서비스</h4>
+                                <p>에스티 로더에서 제공하는 전문적인 서비스를 통해 <br> 고객님만의 진정한 아름다움을 찾으세요</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="images/service2.png" alt="se">
+                            <div class="content">
+                                <h4>라이브 방송</h4>
+                                <p>단독 혜택이 가득한 라이브 방송에 참여해보세요!</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="images/service3.png" alt="se">
+                            <div class="content">
+                                <h4>럭셔리 프래그런스 파인더</h4>
+                                <p>에스티 로더의 새로운 무드 부스팅 향수. <br>당신의 무드를 변화시킬 나만의 향을 찾아보세요</p>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 공식 혜택------------- -->
+        <div class="only">
+            <div class="on-inner">
+                <p>공식몰 단독 혜택</p>
+                <div class="on-box" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="onbox1 on"><img src="images/go1.png" alt="go">
+                        <p>전 배송건 5% 할인 & <br>무료배송</p>
+                    </div>
+                    <div class="onbox2 on">
+                        <div class="txtt">
+                            <h1>15%</h1>
+                            <p>첫 구매 15% 할인</p>
+                            <em>쿠폰코드 ELHAPPY15</em>
+                        </div>
+                    </div>
+                    <div class="onbox3 on"><img src="images/go3.png" alt="go">
+                        <div class="txt">
+                            <p>선물포장 & 기프트메세지</p>
+                            <em>옵션 선택 필수</em>
+                        </div>
+                    </div>
+                    <div class="onbox4 on"><img src="images/go4.png" alt="go">
+                        <div class="txt">
+                            <p>리뷰 이벤트</p>
+                            <em>매달 5명 랜덤 추첨</em>
+                        </div>
+                    </div>
+                    <div class="onbox5 on"><img src="images/go5.png" alt="go">
+                        <div class="txt">
+                            <p>친구초대</p>
+                            <em>친구 초대하면 2만원 쿠폰 증정</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 푸터-------------- -->
+    <footer>
+        <div class="ft-inner">
+            <div class="ft-top">
+                <ul class="t-left">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <ul class="t-right">
+                    <li><a href="#">LIVE CHAT</a></li>
+                    <li><a href="#">공식몰 쇼핑 혜택</a></li>
+                    <li><a href="#">배송 및 교환 정보</a></li>
+                    <li><a href="#"><img src="images/shop.png" alt="">매장 보기</a></li>
+                </ul>
+            </div>
+            <div class="ft-mid">
+                <ul class="menu">
+                    <li><h3>브랜드 스토리</h3></li>
+                    <li><a href="#">창립자 스토리</a></li>
+                    <li><a href="#">회사 정보</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                </ul>
+                <ul class="menu">
+                    <li><h3>고객 문의</h3></li>
+                    <li><a href="#">주문 조회</a></li>
+                    <li><a href="#">이메일 문의</a></li>
+                    <li><a href="#">고객 관리 지원팀</a></li>
+                    <li><a href="#">02-6971-3203</a></li>
+                </ul>
+                <ul class="menu">
+                    <li><h3>고객 센터</h3></li>
+                    <li><a href="#">반품 및 교환</a></li>
+                    <li><a href="#">이용 안내</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">배송정보</a></li>
+                </ul>
+                <ul class="menu">
+                    <li><h3>에스티 로더</h3></li>
+                    <li><a href="#"><img src="images/shop.png" alt="sh">매장 찾기</a></li>
+                    <div class="sns">
+                        <div class="face"><a href="#"><img src="images/facebook.png" alt="fa"></a></div>
+                        <div class="you"><a href="#"><img src="images/youtube.png" alt="yu"></a></div>
+                        <div class="instar"><a href="#"><img src="images/instagram.png" alt="in"></a></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="ft-bottom">
+                <p>이엘씨에이한국(유) 대표 Teng, Hsiao-Hua, 서울시 강남구 강남대로 382(역삼동) 메리츠 타워 9층, 06232. 사업자등록번호: 211-81-71889</p>
+                <p>고객관리지원팀 02-6971-3203 ㅣ consimercare@kr.estee.com 호스팅서비스 사업자: (주)엘지유플러스 ㅣ 통신판매업신고: 강남 15737호</p>
+            </div>
+        </div>
+    </footer>
+
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper1", {
+        loop: true,
+        autoplay: true,
+        effect: 'fade',
+        
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    var swiper = new Swiper(".swiper2", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".swiper3", {
+      cssMode: true,
+      loop: true,
+      autoplay: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+    
+    AOS.init();
+    
+  </script>
+</body>
+</html>
